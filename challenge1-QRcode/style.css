@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --white--text: hsl(0, 0%, 100%);
+    --light-graytext: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --gray-dark-blue: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: var(--light-graytext);
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    max-width: 360px;
+    margin: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.qrcode__img{
+    max-width: 300px;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+.title{
+    color: #000000;
+    padding: 0 25px 0 25px;
+}
+
+.text{
+    color: var(--Grayish-blue);
+    padding: 0 35px 0 35px;
+}
+
+/* footer */
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 550px;
+}
+
+.attribution a { 
+    color: var(--gray-dark-blue); 
+}
+
+/* responsive */
+
+/* moblie 375px */
+
+@media screen and (max-width: 375px){
+    body{
+        min-height: 100vh;
+    }
+
+    .box{
+        padding: 15px;
+    }
+}
+
+/* desktop 1440px */
+
+@media screen and (max-width: 1440px) {
+    
+}
