@@ -41,6 +41,28 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
 6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
+
+Each project is designed to practice a recommended tech stack, but you can choose to work with anything. 
+
+**Link/Status**: If the project is ready in devchallenges.io, you should see a link to the project with designs, and resources to help you get started. Otherwise, `In Progress` means the project is being designed, empty means it has not been created.
+
+####
+
+This path is designed for you to practice HTML, CSS, and basic JavaScript. 
+
+| Project Name | Level | Recommended Tech | Link/Status
+| --- | --- | --- | --- |
+| QRCode                                       | Beginner       | HTML, CSS                       | `Completed` 
+| Recipe App                                   | Beginner       | HTML, CSS                       | `Completed`
+| Age Calculator                               | Beginner       | HTML, CSS, JS                   | 
+| Expense Tracker                              | Beginner       | HTML, CSS, JS                   | 
+| Time tracker                                 | Beginner       | HTML, CSS, JS                   | 
+| Tip Calculator                               | Junior         | HTML, CSS                       | 
+| Pricing Com App                              | Junior         | HTML, CSS                       | 
+| Calculator                                   | Junior         | HTML, CSS, JS                   | 
+| Launch Countdown Timer                       | Junior         | HTML, CSS, JS                   | 
+| Testimonials                                 | Junior         | HTML, CSS, Tailwindcss JS       | 
+
 ## Deploying your project
 
 As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
