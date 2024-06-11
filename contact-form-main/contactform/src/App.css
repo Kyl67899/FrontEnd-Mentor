@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --background-green: hsl(148, 38%, 91%);
+  --background-green-btn: hsl(169, 82%, 27%);
+  --text-color: hsl(0, 66%, 54%);
+  --text-fontsize: 16px;
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(186, 15%, 59%); /* 500 (medium): */
+  --grey-color2: hsl(187, 24%, 22%); /* 900 (darker) */
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--background-green);
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.contactFrom{
+  padding: 15px;
+  max-width: 500px;
+}
+
+/* title */
+.title{
+  display: flex;
+  padding: 7px;
+  color: rgb(4, 107, 4);
+  font-weight: bold;
+}
+
+.name-col{
+  display: flex;
+  flex-direction: row;
+}
+
+.firstname,
+.lastname{
+  display: flex;
+  flex-direction: column;
+}
+
+.firstName,
+.lastName
+.email{
+  display: flex;
+  font-size: var(--text-fontsize);
+  padding-top: 5px;
+}
+
+.fname,
+.lname{
+  padding-top: 5px;
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+  border: 2px solid var(--background-green);
+  border-radius: 5px;
+}
+
+.fname{
+  margin-right: 5px;
+}
+
+/* email */
+.emailForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.Email{
+  display: flex;
+  padding-top: 8px;
+}
+
+.email{
+  display: flex;
+  padding-top: 10px;
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+  border: 2px solid var(--background-green);
+  border-radius: 5px;
+}
+
+/* query type */
+.queryType-name{
+  display: flex;
+  padding-top: 5px;
+}
+
+
+
+
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Green 200 (lighter): hsl(148, 38%, 91%)
+- Green 600 (medium): hsl(169, 82%, 27%)
+- Red: hsl(0, 66%, 54%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey 500 (medium): hsl(186, 15%, 59%)
+- Grey 900 (darker): hsl(187, 24%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (labels): 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
