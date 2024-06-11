@@ -42,19 +42,38 @@ body{
   background-color: #fff;
   border: 3px solid white;
   border-radius: 10px;
+  min-width: 580px;
 }
 
 .contactFrom{
   padding: 15px;
-  max-width: 500px;
 }
 
 /* title */
-.title{
+.title-name{
   display: flex;
   padding: 7px;
+  padding-right: 5px;
   color: rgb(4, 107, 4);
   font-weight: bold;
+}
+
+.title{
+  display: flex;
+}
+
+.form-title{
+  display: flex;
+  font-size: var(--text-fontsize);
+  padding-top: 8px;
+}
+
+.form-title-1{
+  padding-bottom: 15px;
+}
+
+.consent{
+
 }
 
 .name-col{
@@ -79,15 +98,15 @@ body{
 .fname,
 .lname{
   padding-top: 5px;
-  width: auto;
+  width: 260px;
   height: 30px;
   margin-top: 10px;
-  border: 2px solid var(--background-green);
+  border: 2px solid var(--background-green-btn);
   border-radius: 5px;
 }
 
 .fname{
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 /* email */
@@ -104,21 +123,215 @@ body{
 .email{
   display: flex;
   padding-top: 10px;
-  width: auto;
+  width: 535px;
   height: 30px;
   margin-top: 10px;
-  border: 2px solid var(--background-green);
+  border: 2px solid var(--background-green-btn);
   border-radius: 5px;
 }
 
 /* query type */
+.queryType{
+  display: flex;
+  flex-direction: row;
+}
+
+.queryType-1{
+  padding-left: 5px;
+}
+
+.queryType-name{
+
+}
+
+.queryType-btn--title{
+
+}
+
+.queryTypeBox{
+  display: flex;
+}
+
+.queryTypeBtn {
+  display: flex;
+  border: 2px solid green;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.queryTypeBtn{
+  padding-right: 10px;
+}
+
+/* dot */
+.queryTypeBtn .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot{
+  background: #c1c1c1;
+}
+
+.queryTypeBtn .dot::before{
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  top: 4px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.queryType-btn{
+  display: flex;
+  flex-direction: row;
+}
+
+.queryType-btn--title{
+  padding-left: 5px;
+}
+
 .queryType-name{
   display: flex;
   padding-top: 5px;
 }
 
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before{
+  opacity: 1;
+}
 
+/*  */
 
+.wrapper{
+  height: 75px;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  /* border: 1px solid #0069d9; */
+  justify-content: space-evenly;
+}
+
+.wrapper .option{
+  background: #fff;
+  height: 80%;
+  width: 100%;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--background-green-btn);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.3s ease;
+}
+
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: var(--background-green-btn);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot{
+  border-color: var(--background-green-btn);
+  background: #c1c1c1;
+}
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2{
+  border-color: var(--background-green-btn);
+  background: #fff;
+  border: 2px solid var(--background-green-btn);
+  transition: all 0.3s ease;
+}
+
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  /* left: 318px;
+  top: 426px; */
+  height: 12px;
+  width: 12px;
+  /* background: #1d8d46; */
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+label.option:hover{
+  background-color: var(--background-green);
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.wrapper .option span{
+  color: #808080;
+  font-size: 20px;
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before{
+  color: #fff;
+}
+
+/* message */
+.wrapper-1{
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 2px solid var(--background-green-btn);
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+.bottom{
+  display: flex;
+}
+
+.btn{
+  width: 100%;
+  height: 40px;
+  background-color: var(--background-green-btn);
+  border-radius: 8px;
+  color: var(--white-color);
+}
+
+.btn:hover{
+  background-color: var(--background-green-btn);
+}
+
+.bottom input:last-child{
+  margin-right: 5px;
+}
+
+.bottom-content{
+  display: flex;
+  padding-left: 0;
+}
+
+.consent{
+  padding: 15px;
+}
 
 
 /* ## Layout
