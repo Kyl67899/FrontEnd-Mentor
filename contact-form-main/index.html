@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    
 
     <title>Frontend Mentor | Contact form</title>
 
@@ -28,134 +28,146 @@
     </style>
   </head>
   <body>
-    <main class="contactForm">
-      <div class="container">
-        <div class="box">
-          <div class="title">
-            <h1 class="title-name">
-              Contact Us
-            </h1>
-          </div>
-
-          <div name="form" onsubmit="return validate()" action="" class="contactFrom" method="post">
-            <div class="name-col">
-              <div class="firstName">
-                <div class="form-title">
-                  First Name <span class="star">*</span>
-                </div>
-                <input 
-                  type="text" 
-                  name="fname" 
-                  class="fname" 
-                  placeholder="Enter your First Name"
-                  required 
-                />
-                
-              </div>
-
-              <div class="firstName">
-                <div class="form-title">
-                  Last Name <span class="star">*</span>
-                </div>
-                <input 
-                  type="text" 
-                  name="fname" 
-                  class="fname" 
-                  placeholder="Enter your Last Name"
-                  required 
-                />
-                
-              </div>
-            </div>
-            
-            <div class="emailForm">
-              <div class="form-title">
-                Email Address <span class="star">*</span>
-              </div>
-              <input 
-                type="email" 
-                name="email" 
-                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
-                class="email" 
-                placeholder="Enter your email address"
-                required 
-              />
-              
-            </div>
-            
-            <div class="form-title">
-              Query Type <span class="star">*</span>
-            </div>
-
-            <div class="querySelector">
-              <div class="wrapper">
-                <label for="option-1" class="option option-1">
-                  <input 
-                    type="radio" 
-                    name="select" 
-                    id="option-1" 
-                    class="dot" 
-                  />
-                  <span>General Enquiry</span>
-                </label>
-                
-                <label for="option-2" class="option option-2">
-                  <input 
-                    type="radio" 
-                    name="select" 
-                    id="option-2" 
-                    class="dot2" 
-                  />
-                  <!-- {/* <div class="dot"></div> */} -->
-                  <span>Support Request</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="wrapper-1">
-              <div class="form-title form-title-1">
-                Message <span class="star">*</span>
-              </div>
-              <textarea
-                rows="4"
-                cols="70"
-                placeholder="Enter your message"
-              >
-              </textarea>
-              
-            </div>
-
-            <div class="bottom">
-              <div class="bottom-content">
-                <input 
-                  type="checkbox" 
-                />
-                <div class="form-title consent">
-                  I consent to being contacted by the team <span class="star">*</span>
-                </div>
-                <!-- Error -->
-              </div>
-              <!-- <div class="error">
-                Please check the box before submitting.
-              </div> -->
-            </div>
-
-            <input 
-              type="submit" 
-              class="btn"
-              id="submit-btn"
-              onclick="submit()"
-            />
-          </div>
-
-        </div>
+    <div class="container">
+      <div class="notification">
+        <h4 class="notification-header">
+          <img src="./assets/images/icon-success-check.svg" alt="" />
+          Message Sent!
+        </h4>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
       </div>
-    </main>
+      <div class="box">
+        <form name="form" onsubmit="handleSubmit()" class="contactFrom">
+          <div class="title">
+            <h1 class="title-name">Contact Us</h1>
+          </div>
+          <div class="name-col">
+            <div class="firstName">
+              <div class="form-title">
+                First Name <span class="star">*</span>
+              </div>
+              <input
+                type="text"
+                name="fname"
+                class="fname"
+                placeholder="Enter your First Name"
+                required
+              />
+              <p class="error">This field is required.</p>
+            </div>
+
+            <div class="firstName">
+              <div class="form-title">
+                Last Name <span class="star">*</span>
+              </div>
+              <input
+                type="text"
+                name="lname"
+                class="lname"
+                placeholder="Enter your Last Name"
+                required
+              />
+              <p class="error">This field is required.</p>
+            </div>
+          </div>
+
+          <div class="emailForm">
+            <div class="form-title">
+              Email Address <span class="star">*</span>
+            </div>
+            <input
+              type="email"
+              name="email"
+              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              class="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <p class="error">This field is required.</p>
+          </div>
+
+          <div class="querySelector">
+            <label class="form-title">
+              Query Type <span class="star">*</span>
+            </label>
+            <div class="wrapper">
+              <label for="option-1" class="option option-1">
+                <input
+                  type="radio"
+                  name="select"
+                  id="option-1 queryType"
+                  class="dot queryType"
+                  required
+                />
+                <span>General Enquiry</span>
+              </label>
+
+              <label for="option-2" class="option option-2">
+                <input
+                  type="radio"
+                  name="select"
+                  id="option-2 queryType"
+                  class="dot2 queryType"
+                  required
+                />
+
+                <span>Support Request</span>
+              </label>
+            </div>
+            <p class="error">This field is required.</p>
+          </div>
+
+          <div class="wrapper-1">
+            <label class="form-title form-title-1">
+              Message <span class="star">*</span>
+            </label>
+            <textarea
+              id="message"
+              class="message"
+              rows="6"
+              cols="80"
+              placeholder="Enter your message"
+            >
+            </textarea>
+            <p class="error">This field is required.</p>
+          </div>
+
+          <div class="bottom-consent">
+            <div class="bottom-content">
+              <input id="consent" class="consent" type="checkbox" required />
+              <p class="form-title consent">
+                I consent to being contacted by the team.
+                <span class="star">*</span>
+              </p>
+              <!-- Error -->
+            </div>
+          </div>
+          <p class="error">Need to confirm you consent before submitting.</p>
+          <button type="submit" id="submit-btn" class="btn" onclick="submit()">
+            Submit
+          </button>
+          <!-- success message shows if submitted without errors -->
+          <!-- <div id="success-message" class="success">
+            <div class="messageHeader">
+              <img src="./assets/images/icon-success-check.svg" alt="success" />
+              Message Sent!
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon.</p>
+          </div> -->
+        </form>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Kyle Parsotan</a>.
     </div>
+
+    <script src="script.js">
+      document.addEventListener("contextMenu", function(e){
+        alert("Inspect element not allowed");
+      });
+    </script>
   </body>
 </html>

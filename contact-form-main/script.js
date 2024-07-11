@@ -1,55 +1,120 @@
-const submitBtn = document.getElementById('submit-btn');
+const inputs = document.querySelectorAll(".form-input");
+const form = document.querySelector("form");
+const queryTypes = document.querySelectorAll(".query-type");
 
-const validate = (e) => {
+queryTypes.forEach((queryType) => {
+  queryType.addEventListener("click", () => {
+    queryType.firstElementChild.checked = true;
+  });
+});
+
+form.addEventListener(
+  "hover",
+  (e) => {
+    e.target.style.borderColor = "hsl(148, 38%, 91%)";
+  },
+  true
+);
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const fname = document.getElementsByClassName('fname');
-  const lname = document.getElementsByClassName('lname');
-  const emailAddress = document.getElementsByClassName('email');
-  const dot = document.getElementsByClassName('dot');
-  const dot2 = document.getElementsByClassName('dot2');
+  const formData = new FormData(e.currentTarget);
+  const data = Object.fromEntries(formData);
+  // Validate Inputs
+  const isValid = validateInputs(data);
+  // Notify Success Message
+  if (isValid) {
+    const notification = document.querySelector(".notification");
+    notification.classList.add("show-notification");
+    setTimeout(() => {
+      notification.classList.remove("show-notification");
+    }, 3000);
+    // Reset the form
+    e.currentTarget.reset();
+  }
+});
 
-  if (fname.value === "") {
-    alert("Please enter your First Name.");
-    fname.focus();
-    fname.textContent = "You need to enter your first name";
-    return false;
+const validateInputs = ({
+  firstName,
+  lastName,
+  email,
+  queryType,
+  message,
+  consent,
+}) => {
+  let isValid = true;
+  if (firstName.length === 0) {
+    const element = document.querySelector("#firstName");
+    element.nextElementSibling.classList.add("show-message");
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#firstName");
+    element.nextElementSibling.classList.remove("show-message");
+    element.style.borderColor = "hsl(186, 15%, 59%)";
   }
 
-  if (lname.value === "") {
-    alert("Please enter your Last Name.");
-    lname.focus();
-    lname.textContent = "You need to enter your last name";
-    return false;
+  if (lastName.length === 0) {
+    const element = document.querySelector("#lastName");
+    element.nextElementSibling.classList.add("show-message");
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#lastName");
+    element.nextElementSibling.classList.remove("show-message");
+    element.style.borderColor = "hsl(186, 15%, 59%)";
   }
-    
-  if (email.value === "") {
-    // alert("Please enter your email address.");
-    email.focus();
-    email.textContent = "You need to enter a valid email address";
-    return false;
+  if (!new RegExp(/\S+@\S+\.\S+/).test(email)) {
+    const element = document.querySelector("#email");
+    element.nextElementSibling.classList.add("show-message");
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#email");
+    element.nextElementSibling.classList.remove("show-message");
+    element.style.borderColor = "hsl(186, 15%, 59%)";
   }
 
-  if (!emailIsValid(emailAddress.value)) {
-    alert("Please enter a valid email address.");
-    emailAddress.focus();
-    return false;
+  if (!queryType) {
+    const element = document.querySelector("#queryType");
+    element.parentElement.parentElement.nextElementSibling.classList.add(
+      "show-message"
+    );
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#queryType");
+    element.parentElement.parentElement.nextElementSibling.classList.remove(
+      "show-message"
+    );
+    element.style.borderColor = "hsl(186, 15%, 59%)";
   }
 
-  if (dot.value === "" || dot2.value === "") {
-    alert("Please select a query");
-    emailAddress.focus();
-    return false;
+  if (message.length === 0) {
+    const element = document.querySelector("#message");
+    element.nextElementSibling.classList.add("show-message");
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#message");
+    element.nextElementSibling.classList.remove("show-message");
+    element.style.borderColor = "hsl(186, 15%, 59%)";
+  }
+
+  if (!consent) {
+    const element = document.querySelector("#consent");
+    element.parentElement.parentElement.lastElementChild.classList.add(
+      "show-message"
+    );
+    isValid = false;
+    element.style.borderColor = "hsl(0, 66%, 54%)";
+  } else {
+    const element = document.querySelector("#consent");
+    element.parentElement.parentElement.lastElementChild.classList.remove(
+      "show-message"
+    );
+    element.style.borderColor = "hsl(186, 15%, 59%)";
   }
   
-  return true; // Can submit the form data to the server
-}
-
-const emailIsValid = email => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-submitBtn.addEventListener('click', validate);
-
-function submit(){
-    console.log("Submit");
-}
+  return isValid;
+};
