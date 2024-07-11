@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --background-green: hsl(148, 38%, 91%);
+  --background-green-btn: hsl(169, 82%, 27%);
+  --text-color: hsl(0, 66%, 54%);
+  --text-fontsize: 16px;
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(186, 15%, 59%); /* 500 (medium): */
+  --grey-color2: hsl(187, 24%, 22%); /* 900 (darker) */
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--background-green);
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+
+/* error */
+.error{
+    display: flex;
+    padding-top: 5px;
+    color: var(--text-color);
+}
+
+/* box */
+.box{
+    width: 600px;
+    height: 730px;
+    background-color: var(--white-color);
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* contact */
+h1{
+    text-align: left;
+    padding: 50px 0 0 50px;
+    color: var(--grey-color2);
+}
+
+/* star */
+.star{
+    color: var(--grey-color2);
+}
+
+/* form */
+form{
+    display: flex;
+    padding-left: 50px;
+}
+
+/* inputs */
+/* first name */
+input[type="text"]{
+    border-radius: 5px;
+    width: 275px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"]{
+    font-size: 20px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+}
+
+textarea{
+    padding: 10px;
+}
+
+.contactFrom{
+    padding: 15px;
+}
+
+/* title */
+.title-name{
+    display: flex;
+    padding: 50px 0 20px 50px;
+    padding-right: 5px;
+    color: rgb(4, 107, 4);
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+}
+
+.form-title{
+    display: flex;
+    font-size: var(--text-fontsize);
+    padding-top: 8px;
+}
+
+.form-title-1{
+    padding-bottom: 15px;
+}
+
+.name-col{
+    display: flex;
+    flex-direction: row;
+}
+
+.firstName,
+.lastName{
+    display: flex;
+    flex-direction: column;
+}
+
+.firstName,
+.lastName
+.email{
+    display: flex;
+    font-size: var(--text-fontsize);
+    padding-top: 5px;
+}
+
+.fname,
+.lname{
+    padding-top: 5px;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid var(--background-green-btn);
+    border-radius: 5px;
+}
+
+.fname{
+    margin-right: 15px;
+}
+
+/* email */
+.emailForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.Email{
+    display: flex;
+    padding-top: 8px;
+}
+
+.email{
+    display: flex;
+    padding-top: 10px;
+    width: 565px;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid var(--background-green-btn);
+    border-radius: 5px;
+}
+
+/* query type */
+.queryType{
+    display: flex;
+    flex-direction: row;
+}
+
+.queryType-1{
+    padding-left: 5px;
+}
+
+.queryTypeBox{
+    display: flex;
+}
+
+.queryTypeBtn {
+    display: flex;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.queryTypeBtn{
+    padding-right: 10px;
+}
+
+/* dot */
+.queryTypeBtn .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .do2t{
+    background: #c1c1c1;
+}
+
+.queryTypeBtn .dot::before, dot2::before{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    top: 4px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.queryType-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.queryType-btn--title{
+    padding-left: 5px;
+}
+
+.queryType-name{
+    display: flex;
+    padding-top: 5px;
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot2::before{
+    opacity: 1;
+}
+
+/*  */
+
+.wrapper{
+    height: 75px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    /* border: 1px solid #0069d9; */
+    justify-content: space-evenly;
+}
+
+.wrapper .option{
+    background: #fff;
+    height: 80%;
+    width: 100%;
+    margin: 5px 8px 5px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--background-green-btn);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot, .dot2{
+    height: 20px;
+    width: 20px;
+    background: var(--background-green-btn);
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot2{
+    border-color: var(--background-green-btn);
+    background: #c1c1c1;
+}
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2{
+    border-color: var(--background-green-btn);
+    background: #fff;
+    border: 2px solid var(--background-green-btn);
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot::before, .dot2::before{
+    position: absolute;
+    content: "";
+    /* left: 318px;
+    top: 426px; */
+    height: 12px;
+    width: 12px;
+    /* background: #1d8d46; */
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+label.option:hover{
+    background-color: var(--background-green);
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot2::before{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wrapper .option span{
+    color: #808080;
+    font-size: 20px;
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot2::before{
+    color: #fff;
+}
+
+/* message */
+.wrapper-1{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border: 2px solid var(--background-green-btn);
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+.bottom{
+    display: flex;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: var(--background-green-btn);
+    border-radius: 8px;
+    color: var(--white-color);
+}
+
+.btn:hover{
+    background-color: var(--background-green-btn);
+}
+
+.bottom input:last-child{
+    margin-right: 5px;
+}
+
+.bottom-content{
+    display: flex;
+    padding-left: 0;
+}
+
+.consent{
+    padding: 15px;
+}
