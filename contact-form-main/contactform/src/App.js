@@ -19,7 +19,7 @@ function App() {
             <div className="contactFrom">
               <div className="name-col">
 
-                <div className="firstname">
+                <div className="firstName">
                   <div className="form-title">
                     First Name <span className="star">*</span>
                   </div>
@@ -30,12 +30,12 @@ function App() {
                     required 
                   />
                   {/* error */}
-                  <div className="error">
+                  {/* <div className="error">
                     This field is required
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="firstname">
+                <div className="firstName">
                   <div className="form-title">
                     Last Name <span className="star">*</span>
                   </div>
@@ -46,9 +46,9 @@ function App() {
                     required 
                   />
                   {/* error */}
-                  <div className="error">
+                  {/* <div className="error">
                     This field is required
-                  </div>
+                  </div> */}
                 </div>
 
               </div>
@@ -66,9 +66,9 @@ function App() {
                 />
                 {/* error */}
                 {/* error */}
-                <div className="error">
+                {/* <div className="error">
                   Please enter a valid email address
-                </div>
+                </div> */}
                 
               </div>
               
@@ -101,7 +101,7 @@ function App() {
 
               <div className="wrapper-1">
                 <div className="form-title form-title-1">
-                  Message <span>*</span>
+                  Message <span className="star">*</span>
                 </div>
                 <textarea
                   rows={4}
@@ -118,7 +118,7 @@ function App() {
                     type="checkbox" 
                   />
                   <div className="form-title consent">
-                    I consent to being contacted by the team <span>*</span>
+                    I consent to being contacted by the team <span className="star">*</span>
                   </div>
                 </div>
 

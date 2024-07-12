@@ -375,29 +375,36 @@ textarea {
 
 /* Success */
 
-.notification {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, -200%);
-  background: hsl(187, 24%, 22%);
-  color: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  line-height: 1.5;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
-  transition: all 0.3s linear;
-}
-
-.show-notification {
-  transform: translate(-50%, 0%);
-}
-
-.notification-header {
+.message-section {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message-section textarea {
+  font-family: "Karla", sans-serif;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.message-section textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.message-section textarea:focus {
+  border-color: hsl(169, 82%, 27%);
+  outline: none;
+}
+
+.message-section .error-input {
+  border-color: hsl(0, 66%, 56%);
 }
 
 /* - Mobile: 375px
@@ -405,37 +412,37 @@ textarea {
 
 /* small medium devices */
 @media screen and (max-width: 375px) {
-    .title-name {
-        padding-top: 20px;
-    }
+  .title-name {
+    padding-top: 20px;
+  }
 
-    .box{
-        width: 350px;
-        height: 900px;
-    }
+  .box {
+    width: 350px;
+    height: 900px;
+  }
 
-    .name-col {
-        display: flex;
-        flex-direction: column;
-    }
+  .name-col {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contactFrom {
-        padding: 22px;
-    }
+  .contactFrom {
+    padding: 22px;
+  }
 
-    input[type="text"], 
-    input[type="email"] {
-        width: 300px;
-    }
+  input[type="text"],
+  input[type="email"] {
+    width: 300px;
+  }
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .wrapper .option {
-        border-radius: 7px;
-    }
+  .wrapper .option {
+    border-radius: 7px;
+  }
 }
 
 /* large medium devices */
