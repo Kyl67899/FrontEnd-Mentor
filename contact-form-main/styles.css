@@ -340,7 +340,7 @@ input {
 
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   main {
     width: 50%;
     padding: 20px;
@@ -361,7 +361,7 @@ input {
     height: 50px;
     width: 346px;
   }
-} */
+}
 
 @media screen and (min-width: 1440px) {
   .name-section {

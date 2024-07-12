@@ -65,7 +65,7 @@ submitBtn.addEventListener("click", () => {
 
   if (firstName === "") {
     document.querySelector(".first-name input").classList.add("error-input");
-    document.querySelector(".first-name p").style.display = "block";
+    document.querySelector(".first-name p").style.display = "flex";
     hasError = true;
   } else {
     document.querySelector(".first-name input").classList.remove("error-input");
@@ -74,7 +74,7 @@ submitBtn.addEventListener("click", () => {
 
   if (lastName === "") {
     document.querySelector(".last-name input").classList.add("error-input");
-    document.querySelector(".last-name p").style.display = "block";
+    document.querySelector(".last-name p").style.display = "flex";
     hasError = true;
   } else {
     document.querySelector(".last-name input").classList.remove("error-input");
@@ -83,12 +83,12 @@ submitBtn.addEventListener("click", () => {
 
   if (email === "") {
     document.querySelector(".email-section input").classList.add("error-input");
-    emailError[1].style.display = "block";
+    emailError[1].style.display = "flex";
     emailError[0].style.display = "none";
     hasError = true;
   } else if (!isEmailValid) {
     document.querySelector(".email-section input").classList.add("error-input");
-    emailError[0].style.display = "block";
+    emailError[0].style.display = "flex";
     emailError[1].style.display = "none";
     hasError = true;
   } else {
@@ -100,7 +100,7 @@ submitBtn.addEventListener("click", () => {
   }
 
   if (img1.classList.contains("hidden") && img2.classList.contains("hidden")) {
-    document.querySelector(".option-section p").style.display = "block";
+    document.querySelector(".option-section p").style.display = "flex";
     hasError = true;
   } else {
     document.querySelector(".option-section p").style.display = "none";
@@ -110,7 +110,7 @@ submitBtn.addEventListener("click", () => {
     document
       .querySelector(".message-section textarea")
       .classList.add("error-input");
-    document.querySelector(".message-section p").style.display = "block";
+    document.querySelector(".message-section p").style.display = "flex";
     hasError = true;
   } else {
     document
@@ -119,7 +119,7 @@ submitBtn.addEventListener("click", () => {
     document.querySelector(".message-section p").style.display = "none";
   }
 
-  if (img_check.style.display === "block") {
+  if (img_check.style.display === "flex") {
     document.querySelector(".checkbox-section p").style.display = "none";
   } else {
     document.querySelector(".checkbox-section p").style.display = "block";
