@@ -16,8 +16,8 @@ options.forEach((option) => {
     const img = option.querySelector("img");
     const radio1 = document.querySelector("#radio-1");
     const radio2 = document.querySelector("#radio-2");
-    const img1 = document.querySelector("#img1");
-    const img2 = document.querySelector("#img2");
+    const img1 = option.querySelector("#img1");
+    const img2 = option.querySelector("#img2");
 
     if (img === img1) {
       img1.classList.remove("hidden");
