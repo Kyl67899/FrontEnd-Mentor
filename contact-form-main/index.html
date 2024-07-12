@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Contact form</title>
@@ -34,20 +34,20 @@
         <div class="first-name">
           <label>First Name <span>*</span></label>
           <input type="text" />
-          <p class="error-message">This field is required</p>
+          <p class="error-message">This field is required.</p>
         </div>
         <div class="last-name">
           <label>Last Name <span>*</span></label>
           <input type="text" />
-          <p class="error-message">This field is required</p>
+          <p class="error-message">This field is required.</p>
         </div>
       </div>
 
       <div class="email-section">
         <label>Email Address <span>*</span></label>
         <input type="email" />
-        <p class="error-message">Please enter a valid email address</p>
-        <p class="error-message">This field is required</p>
+        <p class="error-message">Please enter a valid email address.</p>
+        <p class="error-message">This field is required.</p>
       </div>
 
       <div class="option-section">
@@ -59,7 +59,7 @@
               id="img1"
               class="hidden"
               src="assets/images/icon-radio-selected.svg"
-              alt=""
+              alt="radio"
             />
             <label for="">General Enquiry</label>
           </div>
@@ -69,24 +69,24 @@
               id="img2"
               class="hidden"
               src="assets/images/icon-radio-selected.svg"
-              alt=""
+              alt="radio"
             />
             <label for="">Support Request</label>
           </div>
         </div>
-        <p class="error-message">Please select a query type</p>
+        <p class="error-message">Please select a query type.</p>
       </div>
 
       <div class="message-section">
         <label>Message <span>*</span></label>
         <textarea></textarea>
-        <p class="error-message">This field is required</p>
+        <p class="error-message">This field is required.</p>
       </div>
 
       <div class="checkbox-section">
         <label>
           <input class="checkbox" id="checkbox" type="checkbox" />
-          <img src="assets/images/icon-checkbox-check.svg" alt="" />
+          <img src="assets/images/icon-checkbox-check.svg" alt="check box" />
           I consent to being contacted by the team <span>*</span>
         </label>
         <p class="error-message">
@@ -99,7 +99,7 @@
 
     <div class="success-message-container">
       <div class="success-message">
-        <img src="assets/images/icon-success-check.svg" alt="" />
+        <img src="assets/images/icon-success-check.svg" alt="check" />
         Message Sent!
       </div>
       <div class="success-message-text">
@@ -107,140 +107,15 @@
       </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Kyle Parsotan</a>
       </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
-
-    <!-- <div class="container">
-      <div class="box">
-        <form name="form" onsubmit="handleSubmit()" class="contactFrom">
-          <div class="title">
-            <h1 class="title-name">Contact Us</h1>
-          </div>
-          <div class="name-col">
-            <div class="firstName">
-              <div class="form-title">
-                First Name <span class="star">*</span>
-              </div>
-              <input
-                type="text"
-                name="fname"
-                class="fname"
-                placeholder="Enter your First Name"
-                required
-              />
-              <p class="error">This field is required.</p>
-            </div>
-
-            <div class="firstName">
-              <div class="form-title">
-                Last Name <span class="star">*</span>
-              </div>
-              <input
-                type="text"
-                name="lname"
-                class="lname"
-                placeholder="Enter your Last Name"
-                required
-              />
-              <p class="error">This field is required.</p>
-            </div>
-          </div>
-
-          <div class="emailForm">
-            <div class="form-title">
-              Email Address <span class="star">*</span>
-            </div>
-            <input
-              type="email"
-              name="email"
-              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-              class="email"
-              placeholder="Enter your email address"
-              required
-            />
-            <p class="error">This field is required.</p>
-          </div>
-
-          <div class="querySelector">
-            <label class="form-title">
-              Query Type <span class="star">*</span>
-            </label>
-            <div class="wrapper">
-              <label for="option-1" class="option option-1">
-                <input
-                  type="radio"
-                  name="select"
-                  id="option-1 queryType"
-                  class="dot queryType"
-                  required
-                />
-                <span>General Enquiry</span>
-              </label>
-
-              <label for="option-2" class="option option-2">
-                <input
-                  type="radio"
-                  name="select"
-                  id="option-2 queryType"
-                  class="dot2 queryType"
-                  required
-                />
-
-                <span>Support Request</span>
-              </label>
-            </div>
-            <p class="error">This field is required.</p>
-          </div>
-
-          <div class="wrapper-1">
-            <label class="form-title form-title-1">
-              Message <span class="star">*</span>
-            </label>
-            <textarea
-              id="message"
-              class="message"
-              rows="6"
-              cols="80"
-              placeholder="Enter your message"
-            >
-            </textarea>
-            <p class="error">This field is required.</p>
-          </div>
-
-          <div class="bottom-consent">
-            <div class="bottom-content">
-              <input id="consent" class="consent" type="checkbox" required />
-              <p class="form-title consent">
-                I consent to being contacted by the team.
-                <span class="star">*</span>
-              </p>
-              Error
-            </div>
-          </div>
-          <p class="error">Need to confirm you consent before submitting.</p>
-          <button type="submit" id="submit-btn" class="btn" onclick="submit()">
-            Submit
-          </button>
-          success message shows if submitted without errors
-          <div class="success-message-container">
-            <div class="success-message">
-              <img src="assets/images/icon-success-check.svg" alt="" />
-              Message Sent!
-            </div>
-            <div class="success-message-text">
-              Thanks for completing the form. We'll be in touch soon!
-            </div>
-          </div>
-        </form>
-      </div>
-    </div> -->
   </body>
 </html>
