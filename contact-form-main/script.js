@@ -16,8 +16,8 @@ options.forEach((option) => {
     const img = option.querySelector("img");
     const radio1 = document.querySelector("#radio-1");
     const radio2 = document.querySelector("#radio-2");
-    const img1 = option.querySelector("#img1");
-    const img2 = option.querySelector("#img2");
+    const img1 = document.querySelector("#img1");
+    const img2 = document.querySelector("#img2");
 
     if (img === img1) {
       img1.classList.remove("hidden");
@@ -83,19 +83,19 @@ submitBtn.addEventListener("click", () => {
 
   if (email === "") {
     document.querySelector(".email-section input").classList.add("error-input");
-    emailError[1].style.display = "flex";
-    emailError[0].style.display = "none";
+    emailError[1].style.display = "none";
+    emailError[0].style.display = "flex";
     hasError = true;
   } else if (!isEmailValid) {
     document.querySelector(".email-section input").classList.add("error-input");
-    emailError[0].style.display = "flex";
-    emailError[1].style.display = "none";
+    emailError[0].style.display = "none";
+    emailError[1].style.display = "flex";
     hasError = true;
   } else {
     document
       .querySelector(".email-section input")
       .classList.remove("error-input");
-    emailError[0].style.display = "none";
+    emailError[0].style.display = "flex";
     emailError[1].style.display = "none";
   }
 
