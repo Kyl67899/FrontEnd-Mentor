@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Contact form</title>
 
@@ -28,14 +28,97 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="notification">
-        <h4 class="notification-header">
-          <img src="./assets/images/icon-success-check.svg" alt="" />
-          Message Sent!
-        </h4>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    <main>
+      <h1>Contact Us</h1>
+      <div class="name-section">
+        <div class="first-name">
+          <label>First Name <span>*</span></label>
+          <input type="text" />
+          <p class="error-message">This field is required</p>
+        </div>
+        <div class="last-name">
+          <label>Last Name <span>*</span></label>
+          <input type="text" />
+          <p class="error-message">This field is required</p>
+        </div>
       </div>
+
+      <div class="email-section">
+        <label>Email Address <span>*</span></label>
+        <input type="email" />
+        <p class="error-message">Please enter a valid email address</p>
+        <p class="error-message">This field is required</p>
+      </div>
+
+      <div class="option-section">
+        <label>Query Type <span>*</span></label>
+        <div class="option-container">
+          <div class="radio-button-container" id="radio-1">
+            <span class="custom-radio-btn"></span>
+            <img
+              id="img1"
+              class="hidden"
+              src="assets/images/icon-radio-selected.svg"
+              alt=""
+            />
+            <label for="">General Enquiry</label>
+          </div>
+          <div class="radio-button-container" id="radio-2">
+            <span class="custom-radio-btn"></span>
+            <img
+              id="img2"
+              class="hidden"
+              src="assets/images/icon-radio-selected.svg"
+              alt=""
+            />
+            <label for="">Support Request</label>
+          </div>
+        </div>
+        <p class="error-message">Please select a query type</p>
+      </div>
+
+      <div class="message-section">
+        <label>Message <span>*</span></label>
+        <textarea></textarea>
+        <p class="error-message">This field is required</p>
+      </div>
+
+      <div class="checkbox-section">
+        <label>
+          <input class="checkbox" id="checkbox" type="checkbox" />
+          <img src="assets/images/icon-checkbox-check.svg" alt="" />
+          I consent to being contacted by the team <span>*</span>
+        </label>
+        <p class="error-message">
+          To submit this form, please consent to being contacted
+        </p>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+    </main>
+
+    <div class="success-message-container">
+      <div class="success-message">
+        <img src="assets/images/icon-success-check.svg" alt="" />
+        Message Sent!
+      </div>
+      <div class="success-message-text">
+        Thanks for completing the form. We'll be in touch soon!
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Kyle Parsotan</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- <div class="container">
       <div class="box">
         <form name="form" onsubmit="handleSubmit()" class="contactFrom">
           <div class="title">
@@ -139,35 +222,25 @@
                 I consent to being contacted by the team.
                 <span class="star">*</span>
               </p>
-              <!-- Error -->
+              Error
             </div>
           </div>
           <p class="error">Need to confirm you consent before submitting.</p>
           <button type="submit" id="submit-btn" class="btn" onclick="submit()">
             Submit
           </button>
-          <!-- success message shows if submitted without errors -->
-          <!-- <div id="success-message" class="success">
-            <div class="messageHeader">
-              <img src="./assets/images/icon-success-check.svg" alt="success" />
+          success message shows if submitted without errors
+          <div class="success-message-container">
+            <div class="success-message">
+              <img src="assets/images/icon-success-check.svg" alt="" />
               Message Sent!
             </div>
-            <p>Thanks for completing the form. We'll be in touch soon.</p>
-          </div> -->
+            <div class="success-message-text">
+              Thanks for completing the form. We'll be in touch soon!
+            </div>
+          </div>
         </form>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Kyle Parsotan</a>.
-    </div>
-
-    <script src="script.js">
-      document.addEventListener("contextMenu", function(e){
-        alert("Inspect element not allowed");
-      });
-    </script>
+    </div> -->
   </body>
 </html>

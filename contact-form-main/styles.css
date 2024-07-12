@@ -1,0 +1,294 @@
+body {
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  background-color: hsl(148, 38%, 91%);
+
+  position: relative;
+}
+
+main {
+  margin: auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 50%;
+  color: hsl(187, 24%, 22%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 0;
+  padding-top: 0;
+  color: hsl(187, 24%, 22%);
+  font-size: 32px;
+}
+
+span {
+  color: hsl(169, 82%, 27%);
+}
+
+.name-section {
+  display: flex;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.name-section input,
+.email-section input {
+  height: 50px;
+  width: 232px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.email-section input {
+    width: 478px;
+}
+
+.name-section input:focus,
+.email-section input:focus {
+  border-color: hsl(169, 82%, 27%);
+  outline: none;
+}
+
+.name-section input:hover,
+.email-section input:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.name-section .error-input,
+.email-section .error-input {
+  border-color: hsl(0, 66%, 56%);
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.first-name,
+.last-name {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 20px;
+}
+
+.email-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.option-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.radio-button-container input {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+.bg-light-green {
+  background-color: hsl(148, 38%, 91%);
+}
+
+.radio-button-container label {
+  padding: 0;
+  cursor: pointer;
+}
+
+.radio-button-container img {
+  margin-left: -29px;
+  margin-right: 9px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.radio-button-container {
+  height: 50px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.radio-button-container .custom-radio-btn {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border: 1px solid gray;
+  border-radius: 100%;
+}
+
+.message-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message-section textarea {
+  font-family: "Karla", sans-serif;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.message-section textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.message-section textarea:focus {
+  border-color: hsl(169, 82%, 27%);
+  outline: none;
+}
+
+.message-section .error-input {
+  border-color: hsl(0, 66%, 56%);
+}
+
+.checkbox-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.checkbox-section label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-section label img {
+  position: relative;
+  margin-left: -28px;
+  margin-right: 10px;
+  display: none;
+}
+
+.checkbox-section input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  height: 18px;
+  width: 18px;
+  border: 2px solid hsl(186, 15%, 59%);
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.submit-btn {
+  height: 50px;
+  width: 100%;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error-message {
+  display: none;
+  margin-top: 0;
+  color: hsl(0, 66%, 56%);
+}
+
+.success-message-container {
+  color: white;
+  background-color: hsl(187, 24%, 22%);
+  padding: 24px;
+  border-radius: 10px;
+  min-width: 300px;
+
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+}
+
+.success-message {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.success-message-text {
+  color: hsl(148, 38%, 91%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-top: 0;
+  }
+
+  main {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .name-section {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .option-container {
+    flex-direction: column;
+  }
+}
