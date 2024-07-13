@@ -28,14 +28,68 @@ body {
     align-items: center;
 }
 
+/* image */
+img.img{
+    border-radius: 15px;
+}
+
+/* card */
+
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 23em;
+    height: 32em;
     background-color: var(--card-bg);
     color: var(--text);
-    border-radius: 25px;  
+    border-radius: 25px;
+    box-shadow: 10px 10px;
+}
+
+/* insde the card */
+
+.inside-card{
+    padding: 20px;
+}
+
+.btn{
+
+}
+
+.btn span{
+
+}
+
+.pub{
+
+}
+
+.title{
+
+}
+
+.text{
+    
+}
+
+/* author */
+
+.author{
+
+}
+
+.leftAuth{
+
+}
+
+.avaimg{
+
+}
+
+.name{
+    
 }
 
 @media screen and (width: 375px) {
