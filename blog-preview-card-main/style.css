@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{
     --background: hsl(47, 88%, 63%);
     --card-bg: hsl(0, 0%, 100%);
@@ -9,6 +11,7 @@
 
     /* - Family: [Figtree](https://fonts.google.com/specimen/Figtree) */
     /* Weights: 500, 800 */
+    --font-family: ;
 }
 
 * {
@@ -55,41 +58,67 @@ img.img{
 }
 
 .btn{
+    background-color: var(--background);
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
 
+.btn:hover{
+    background-color: var(--text-grey);
+    color: var(--background);
+}
+
+.btn a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.btn a:hover{
+    text-decoration: none;
 }
 
 .btn span{
-
+    font-weight: 900;
 }
 
 .pub{
-
+    font-size: var(--font-size);
+    font-weight: 400;
+    padding: 10px 0 ;
 }
 
 .title{
-
+    padding-bottom: 8px;
 }
 
 .text{
-    
+    font-size: var(--font-size);
+    color: var(--text-grey);
+    padding-bottom: 14px;
 }
 
 /* author */
 
 .author{
-
+    padding-top: 10px;
 }
 
 .leftAuth{
-
+    display: flex;
 }
 
 .avaimg{
-
+    width: 35px;
 }
 
 .name{
-    
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
 }
 
 @media screen and (width: 375px) {
