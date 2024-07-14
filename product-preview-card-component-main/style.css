@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root{
+    --background-btn-price: hsl(158, 36%, 37%);
+    --background-btn-price: hsl(158, 36%, 37%); /* dark green hover active */
+    --bg: hsl(30, 38%, 92%);
+    --text-title: hsl(212, 21%, 14%);
+    --para: hsl(228, 12%, 48%);
+    --card-bg: hsl(0, 0%, 100%);
+    --font-size: 15px;
+    --font-family1: "Montserrat", sans-serif;
+    --font-family2: 'Fraunces', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image */
+img.img{
+    border-radius: 15px;
+}
+
+/* card */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45em;
+    height: 32em;
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-radius: 25px;
+}
