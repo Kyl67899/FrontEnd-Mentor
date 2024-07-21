@@ -163,6 +163,11 @@ img.img {
     background-size: 300px 100px;
   }
 
+  .title{
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+
   .text{
     font-size: 23px;
   }
