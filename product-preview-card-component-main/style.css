@@ -13,16 +13,15 @@
   --font-family2: "Fraunces", sans-serif;
 }
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: "Inter";
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
@@ -32,30 +31,31 @@ body {
 
 /* image */
 img.img {
-  border-radius: 15px;
+  border-radius: 20px 0 0 20px;
   width: 340px;
 }
 
 /* card */
-
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   width: 45em;
   height: 32em;
   background-color: var(--card-bg);
   color: var(--text);
   border-radius: 25px;
+
+  /* max-width: 500px; */
+  margin: 0 auto;
 }
 
 .leftimg {
-    
+
 }
 
 .rightimg {
-
+  padding: 0 0 0 22px;
 }
 
 .info {
@@ -63,31 +63,67 @@ img.img {
 }
 
 .title {
-
+  font-family: var(--font-family1);
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .name {
-
+  font-family: var(--font-family2);
+  padding-top: 15px;
+  font-size: 50px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .text {
-
+  padding: 25px 45px 25px 0;
+  font-family: var(--font-family1);
+  color:  var(--para);
 }
 
 .price {
-    display: flex;
+  display: flex;
+  padding-bottom: 8px;
 }
 
 .reduprice {
-
+  font-size: 40px;
+  color: var(--background-btn-price);
+  font-family: var(--font-family2);
 }
 
 .orgprice {
-
+  font-size: 18px;
+  padding-left: 15px;
+  color: var(--para);
+  font-family: var(--font-family2);
+  display: flex;
+  align-items: center;
+  text-decoration: line-through;
 }
 
-.btn {
+/* .btn {
+  line-height: 25px;
+}
 
+.btn::before {
+  content: "🔎";
+} */
+
+.btn {
+  background-color: var(--background-btn-price);
+  color: var(--bg);
+  width: 20rem;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.btn span.icon{
+  background: url("") no-repeat left center;
+  background-color: var(--bg);
+  width: 10px;
+  height: 40px;
 }
 
 .footer {
@@ -99,8 +135,49 @@ img.img {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    height: 60em;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  img.img {
+    /* background-image: url("./images/image-product-mobile.jpg"); */
+    /* border-radius: 20px 0 0 20px; */
+    width: 215px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    height: 58em;
+  }
+
+  .leftimg{
+    background: url("./images/image-product-mobile.jpg") no-repeat;
+    background-size: 300px 100px;
+  }
+
+  .text{
+    font-size: 23px;
+  }
+
+  .rightimg{
+    padding: 8px 0 0 22px;
+  }
+
+  .name{
+    padding: 15px 15px 0 0;
+  }
+
+  .btn{
+    width: 32rem;
+  }
 }
 
 @media screen and (width: 1440px) {
