@@ -20,7 +20,10 @@
   <body>
     <div class="card">
       <div class="leftimg">
-        <img src="./images/image-product-desktop.jpg" alt="product" class="img">
+        <picture>
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)" />
+          <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essense perfume bottle laying on a table with branches and leaves" />
+        </picture>
       </div>
       <div class="rightimg">
         <div class="info">
@@ -45,9 +48,10 @@
           </div>
         </div>
         <button class="btn">
-          <i style='font-size:20px' class='fas'>&#xf07a;</i>
-          <!-- <span class="icon"></span>  -->
-          Add to Cart
+          <img class="icon" src="./images/icon-cart.svg" alt="image" />
+          <span>
+            Add to Cart
+          </span>
         </button>
       </div>
     </div>
