@@ -54,6 +54,7 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 | --- | --- | --- | --- |
 | QRCode                                       | Beginner       | HTML, CSS                       | `Completed` 
 | Recipe App                                   | Beginner       | HTML, CSS                       | `Completed`
+| 4 card feature                               | Beginner       | HTML, CSS                       | `Completed`
 | Age Calculator                               | Beginner       | HTML, CSS, JS                   | 
 | Expense Tracker                              | Beginner       | HTML, CSS, JS                   | 
 | Time tracker                                 | Beginner       | HTML, CSS, JS                   | 
