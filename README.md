@@ -54,10 +54,11 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 | --- | --- | --- | --- |
 | QRCode                                       | Beginner       | HTML, CSS                       | `Completed` 
 | Recipe App                                   | Beginner       | HTML, CSS                       | `Completed`
-| <a href="https://kyl67899.github.io/4CardFeature/">4 card feature</a>                               | Beginner       | HTML, CSS                       | `Completed`
 | Age Calculator                               | Beginner       | HTML, CSS, JS                   | 
 | Expense Tracker                              | Beginner       | HTML, CSS, JS                   | 
 | Time tracker                                 | Beginner       | HTML, CSS, JS                   | 
+| <a href="https://kyl67899.github.io/4CardFeature/">4 card feature</a>                               | Junior       | HTML, CSS                       | `Completed`
+| Testimonials grid section                                | Junior       | HTML, CSS                | `In Progress`
 | Tip Calculator                               | Junior         | HTML, CSS                       | 
 | Pricing Com App                              | Junior         | HTML, CSS                       | 
 | Calculator                                   | Junior         | HTML, CSS, JS                   | 
