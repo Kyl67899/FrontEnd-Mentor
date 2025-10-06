@@ -52,17 +52,24 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 
 | Project Name | Level | Recommended Tech | Link/Status
 | --- | --- | --- | --- |
+| <a href="">Article Preview Component</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
+| <a href="">Blog Preview</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
+| <a href="">Age Calculator </a>                               | Beginner       | HTML, CSS, JS                   | `In progress`
+| <a href="">Expense Tracker </a>                              | Beginner       | HTML, CSS, JS                   | `In progress`
+| <a href="">Time tracker </a>                                 | Beginner       | HTML, CSS, JS                   | `In progress`
+| <a href="">Tip Calculator  </a>                              | Junior         | HTML, CSS                       | `In progress`
+| <a href="">Pricing Com App</a>                               | Junior         | HTML, CSS                       | `In progress`
+| <a href="">Calculator   </a>                                | Junior         | HTML, CSS, JS                   | `In progress`
+| <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | `In progress`
+| <a href="">Interactive Rating App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
+| <a href="">Advice Gen App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">QRCode</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
-| <a href="">Recipe App</a>                                   | Beginner       | HTML, CSS                       | `Completed`
-| <a href="">Age Calculator </a>                               | Beginner       | HTML, CSS, JS                   | 
-| <a href="">Expense Tracker </a>                              | Beginner       | HTML, CSS, JS                   | 
-| <a href="">Time tracker </a>                                 | Beginner       | HTML, CSS, JS                   | 
+| <a href="">Contact Form</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="https://kyl67899.github.io/4CardFeature/">4 card feature</a>                               | Junior       | HTML, CSS                       | `Completed`
+| <a href="">Order Summary</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
+| <a href="">Plantree</a>                                       | Intermediate       | HTML, CSS                       | `Completed` 
+| <a href="">Recipe App</a>                                   | Beginner       | HTML, CSS                       | `Completed`
 | <a href="">Testimonials grid section </a>                               | Junior       | HTML, CSS                | `In Progress`
-| <a href="">Tip Calculator  </a>                              | Junior         | HTML, CSS                       | 
-| <a href="">Pricing Com App</a>                               | Junior         | HTML, CSS                       | 
-| <a href="">Calculator   </a>                                | Junior         | HTML, CSS, JS                   | 
-| <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | 
 | <a href="">Testimonials   </a>                               | Junior         | HTML, CSS, Tailwindcss JS       | 
 
 ## Deploying your project
@@ -94,9 +101,8 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 There are multiple places you can share your solution:
 
 1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+2. Share your solution on other social channels like LinkedIn.
+3. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
 We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
@@ -109,4 +115,3 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
-# orderSummary
