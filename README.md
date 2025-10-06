@@ -52,18 +52,18 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 
 | Project Name | Level | Recommended Tech | Link/Status
 | --- | --- | --- | --- |
-| QRCode                                       | Beginner       | HTML, CSS                       | `Completed` 
-| Recipe App                                   | Beginner       | HTML, CSS                       | `Completed`
-| Age Calculator                               | Beginner       | HTML, CSS, JS                   | 
-| Expense Tracker                              | Beginner       | HTML, CSS, JS                   | 
-| Time tracker                                 | Beginner       | HTML, CSS, JS                   | 
+| <a href="">QRCode</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
+| <a href="">Recipe App</a>                                   | Beginner       | HTML, CSS                       | `Completed`
+| <a href="">Age Calculator </a>                               | Beginner       | HTML, CSS, JS                   | 
+| <a href="">Expense Tracker </a>                              | Beginner       | HTML, CSS, JS                   | 
+| <a href="">Time tracker </a>                                 | Beginner       | HTML, CSS, JS                   | 
 | <a href="https://kyl67899.github.io/4CardFeature/">4 card feature</a>                               | Junior       | HTML, CSS                       | `Completed`
-| Testimonials grid section                                | Junior       | HTML, CSS                | `In Progress`
-| Tip Calculator                               | Junior         | HTML, CSS                       | 
-| Pricing Com App                              | Junior         | HTML, CSS                       | 
-| Calculator                                   | Junior         | HTML, CSS, JS                   | 
-| Launch Countdown Timer                       | Junior         | HTML, CSS, JS                   | 
-| Testimonials                                 | Junior         | HTML, CSS, Tailwindcss JS       | 
+| <a href="">Testimonials grid section </a>                               | Junior       | HTML, CSS                | `In Progress`
+| <a href="">Tip Calculator  </a>                              | Junior         | HTML, CSS                       | 
+| <a href="">Pricing Com App</a>                               | Junior         | HTML, CSS                       | 
+| <a href="">Calculator   </a>                                | Junior         | HTML, CSS, JS                   | 
+| <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | 
+| <a href="">Testimonials   </a>                               | Junior         | HTML, CSS, Tailwindcss JS       | 
 
 ## Deploying your project
 
