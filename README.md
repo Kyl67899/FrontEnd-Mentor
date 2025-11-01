@@ -52,6 +52,7 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 
 | Project Name | Level | Recommended Tech | Link/Status
 | --- | --- | --- | --- |
+| <a href="">NFT preview Component</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Article Preview Component</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Blog Preview</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Age Calculator </a>                               | Beginner       | HTML, CSS, JS                   | `In progress`
