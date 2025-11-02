@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - Frontend Mentor Challenges
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
@@ -52,7 +52,6 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 
 | Project Name | Level | Recommended Tech | Link/Status
 | --- | --- | --- | --- |
-| <a href="">NFT preview Component</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Article Preview Component</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Blog Preview</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Age Calculator </a>                               | Beginner       | HTML, CSS, JS                   | `In progress`
@@ -62,6 +61,7 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 | <a href="">Pricing Com App</a>                               | Junior         | HTML, CSS                       | `In progress`
 | <a href="">Calculator   </a>                                | Junior         | HTML, CSS, JS                   | `In progress`
 | <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | `In progress`
+| <a href="">NFT preview Component</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">Interactive Rating App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">Advice Gen App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">QRCode</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
