@@ -61,9 +61,9 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 | <a href="">Pricing Com App</a>                               | Junior         | HTML, CSS                       | `In progress`
 | <a href="">Calculator   </a>                                | Junior         | HTML, CSS, JS                   | `In progress`
 | <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | `In progress`
+| <a href="">Advice Gen App</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
+| <a href="">Interactive Rating App</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="https://nfts-card.vercel.app">NFT preview Component</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
-| <a href="">Interactive Rating App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
-| <a href="">Advice Gen App</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">QRCode</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">Contact Form</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="https://kyl67899.github.io/4CardFeature/">4 card feature</a>                               | Junior       | HTML, CSS                       | `Completed`
