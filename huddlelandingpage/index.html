@@ -206,7 +206,7 @@
         </p>
         <div class="newsletter-input">
           <input type="email" placeholder="Enter your email address">
-          <button href="#" class="btn-primary">
+          <button class="btn-primary">
             Subscribe
           </button>
         </div>
@@ -220,6 +220,17 @@
       </p>
     </div>
   </main>
-</body>
 
+  <script>
+    document.querySelector(".newsletter-input button").addEventListener("click", function (e) {
+      const emailInput = document.querySelector("input[type='email']");
+      if (!emailInput.checkValidity()) {
+        e.preventDefault();
+        emailInput.reportValidity();
+      } else {
+        alert("Thank you for subscribing to our newsletter!");
+      }
+    });
+  </script>
+</body>
 </html>
