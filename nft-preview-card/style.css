@@ -30,10 +30,15 @@ body {
 }
 
 /* image */
+.image {
+  /* margin: 10px 25px 0; */
+  position: relative;
+}
+
 .img {
   width: 320px;
   height: auto;
-  margin: 10px 25px 0;
+  /* margin: 10px 25px 0; */
   border-radius: 15px;
 }
 
@@ -128,6 +133,38 @@ hr {
 
 .author span {
   color: var(--text-white);
+}
+
+/* hover */
+/* .img:hover{
+  background-color: var(--text-cyan);
+} */
+
+.overlay {
+  height: 99%;
+  width: 95%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  margin: 8px 8px 0;
+}
+
+.overlay:hover {
+  background-color: var(--text-cyan);
+  opacity: 1;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title:hover,
+.author span:hover {
+  color: var(--text-cyan);
 }
 
 @media screen and (min-width: 320px) {
