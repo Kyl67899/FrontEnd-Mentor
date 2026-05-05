@@ -63,6 +63,7 @@ This path is designed for you to practice HTML, CSS, and basic JavaScript.
 | <a href="">Launch Countdown Timer   </a>                     | Junior         | HTML, CSS, JS                   | `In progress`
 | <a href="">Advice Gen App</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
 | <a href="">Interactive Rating App</a>                                       | Beginner       | HTML, CSS                       | `In progress` 
+| <a href="https://kyl67899.github.io/pingsoonpage/">Ping Coming Soon Page</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="https://nfts-card.vercel.app">NFT preview Component</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">QRCode</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
 | <a href="">Contact Form</a>                                       | Beginner       | HTML, CSS                       | `Completed` 
