@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # Dependabot will check the repository root. The custom script handles nested projects.
